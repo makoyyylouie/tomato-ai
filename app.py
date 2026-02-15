@@ -25,6 +25,49 @@ st.set_page_config(
 )
 
 # =============================================================================
+# CUSTOM CSS FOR BETTER VISIBILITY
+# =============================================================================
+st.markdown("""
+<style>
+/* Fix text visibility issues */
+.stTextInput > div > div > input,
+.stSelectbox > div > div > select,
+.stTextArea > div > div > textarea {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+}
+
+/* Ensure all text is visible */
+p, h1, h2, h3, h4, h5, h6, li, span, div {
+    color: #000000 !important;
+}
+
+/* Fix sidebar text */
+.css-1d391kg {
+    color: #000000 !important;
+}
+
+/* Fix button text */
+.stButton > button {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #cccccc !important;
+}
+
+/* Fix form labels */
+.stForm {
+    color: #000000 !important;
+}
+
+/* Ensure input fields have visible text */
+input, select, textarea {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# =============================================================================
 # SESSION STATE INITIALIZATION (FIXED - Added camera_mode)
 # =============================================================================
 if 'recent_scans' not in st.session_state:
