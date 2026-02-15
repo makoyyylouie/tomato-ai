@@ -3,6 +3,7 @@
 # TOMATO RIPENESS & DISEASE CHECKER - Streamlit Web Application (WITH AUTH)
 # =============================================================================
 # how run this in terminal/powershell 1st: cd "C:\Users\David\OneDrive\Documents\Tomato AI Final" 2nd: streamlit run app.py
+# Version: 1.0.1 - Fixed OpenCV dependencies for cloud deployment
 import streamlit as st
 from ultralytics import YOLO
 import cv2
